@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/">
+    <file>resources/delete.png</file>
+    <file>resources/add.png</file>
+    <file>resources/minus_l.png</file>
+    <file>resources/plus_l.png</file>
+    <file>resources/map.png</file>
+    <file>resources/clearfilter.png</file>
+    <file>resources/selcoord.png</file>
+    <file>resources/turnccw.png</file>
+    <file>resources/turncw.png</file>
+    <file>resources/revert.png</file>
+    <file>resources/submit.png</file>
+  </qresource>
+</RCC>

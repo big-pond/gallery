@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menuPhotos">
+    <property name="title">
+     <string>Photos</string>
+    </property>
+    <addaction name="actionAddPhoto"/>
+    <addaction name="actionDeletePhoto"/>
+    <addaction name="separator"/>
+    <addaction name="actionRevert"/>
+    <addaction name="actionSubmit"/>
+    <addaction name="separator"/>
+    <addaction name="actionTurnCW"/>
+    <addaction name="actionTurnCCW"/>
+   </widget>
+   <widget class="QMenu" name="menuCoordinate_system">
+    <property name="title">
+     <string>Coordinate system</string>
+    </property>
+    <addaction name="actionPixels"/>
+    <addaction name="actionMeters"/>
+    <addaction name="actionDeg"/>
+    <addaction name="actionDegMin"/>
+    <addaction name="actionDegMinSec"/>
+    <addaction name="actionRad"/>
+   </widget>
+   <widget class="QMenu" name="menuFilter">
+    <property name="title">
+     <string>Filter</string>
+    </property>
+    <addaction name="actionSelect_by_coordinates"/>
+    <addaction name="separator"/>
+    <addaction name="actionClear_filter"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuCoordinate_system"/>
+   <addaction name="menuPhotos"/>
+   <addaction name="menuFilter"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionRevert">
+   <property name="icon">
+    <iconset resource="gallery.qrc">
+     <normaloff>:/resources/revert.png</normaloff>:/resources/revert.png</iconset>
+   </property>
+   <property name="text">
+    <string>Revert</string>
+   </property>
+  </action>
+  <action name="actionSubmit">
+   <property name="icon">
+    <iconset resource="gallery.qrc">
+     <normaloff>:/resources/submit.png</normaloff>:/resources/submit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionPixels">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Pixels</string>
+   </property>
+  </action>
+  <action name="actionMeters">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Meters</string>
+   </property>
+  </action>
+  <action name="actionDeg">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Degrees</string>
+   </property>
+  </action>
+  <action name="actionDegMin">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Degrees, minutes</string>
+   </property>
+  </action>
+  <action name="actionDegMinSec">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Degrees, minutes, seconds</string>
+   </property>
+  </action>
+  <action name="actionRad">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Radians</string>
+   </property>
+  </action>
+  <action name="actionTurnCW">
+   <property name="icon">
+    <iconset resource="gallery.qrc">
+     <normaloff>:/resources/turncw.png</normaloff>:/resources/turncw.png</iconset>
+   </property>
+   <property name="text">
+    <string>Turn clockwise</string>
+   </property>
+  </action>
+  <action name="actionTurnCCW">
+   <property name="icon">
+    <iconset resource="gallery.qrc">
+     <normaloff>:/resources/turnccw.png</normaloff>:/resources/turnccw.png</iconset>
+   </property>
+   <property name="text">
+    <string>Turn counterclockwise</string>
+   </property>
+  </action>
+  <action name="actionSelect_by_coordinates">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="gallery.qrc">
+     <normaloff>:/resources/selcoord.png</normaloff>:/resources/selcoord.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select by coordinates</string>
+   </property>
+  </action>
+  <action name="actionClear_filter">
+   <property name="icon">
+    <iconset resource="gallery.qrc">
+     <normaloff>:/resources/clearfilter.png</normaloff>:/resources/clearfilter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear filter</string>
+   </property>
+  </action>
+  <action name="actionAddPhoto">
+   <property name="icon">
+    <iconset resource="gallery.qrc">
+     <normaloff>:/resources/add.png</normaloff>:/resources/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add photo</string>
+   </property>
+  </action>
+  <action name="actionDeletePhoto">
+   <property name="icon">
+    <iconset resource="gallery.qrc">
+     <normaloff>:/resources/delete.png</normaloff>:/resources/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete photo</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="gallery.qrc"/>
+ </resources>
+ <connections/>
+</ui>
